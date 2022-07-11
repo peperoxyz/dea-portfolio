@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,600;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap");
+
+/* Menerapkan materi font dan text styling*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 65px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #171b27;
+}
+
+footer {
+  position: inline-block;
+  padding: 1px 20px 10px 50px;
+  color: white;
+  background-color: #00a2c6;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a {
+  font-size: 1000px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+/* Menerapkan materi box model */
+
+.welcome {
+  padding: 10px;
+}
+
+.decor {
+  position: sticky;
+  height: 10px;
+  background-image: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #171b27;
+  margin: 0 auto;
+}
+
+#menu {
+  padding: 5px;
+}
+
+.gradient-text {
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+/* Menerapkan Float dan Positioning */
+
+.opening {
+  float: left;
+  width: 100%;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.contact ul li {
+  list-style: none;
+  margin: 7px 17px;
+  padding: 10px 15px;
+  padding-bottom: 0px;
+  border-radius: 7px;
+  background-color: #3a425c;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.contact ul {
+  padding-inline-start: 0px;
+}
+
+.contact ul li:hover {
+  /* font-size: 50px; */
+  border-radius: 7700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Menerapkan materi Media Query */
+/* Menetapkan elemen .opening dan #content agar memiliki lebar 100%(memenuhi layar). Properti ini akan diterapkan jika ukuran lebar viewport kurang dari 1000px (maksimal 999px) */
+@media screen and (max-width: 1000px) {
+  #content,
+  .opening {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .opening {
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .opening {
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .opening {
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  .opening {
+    width: 100%;
+    padding: 0;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .container {
+    display: none;
+  }
+}
